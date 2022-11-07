@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    background: #E5E5E5;
+}
+.container{
+    max-width: 1150px;
+    margin: 0 auto;
+}
+h1{
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    margin: 100px 0 40px;
+}
+h2{
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+}
+.b-product__box_margin{
+    margin: 80px 0 64px;
+}
+.b-product__box .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.b-product{
+    width: 366px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 30px 30px 30px;
+    box-sizing: border-box;
+}
+.b-product__heading{
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 40px;
+}
+
+.b-product__img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 30px;
+}
+.b-product__text{
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 30px;
+}
+.b-product__price{
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+.b-product__btn {
+    font-size: 18px;
+    line-height: 0;
+    color: #FFFFFF;
+    border: none;
+    background: #2CC34F;
+    width: 306px;
+    height: 57px;
+    box-sizing: border-box;
+    transition: .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.b-product__btn:hover {
+    background-color: #0c902b;
+    transition: .5s;
+}
+
+.b-product__btn .check {
+    opacity: 0;
+    transition: .5s;
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 18px / 2);
+}
+
+.b-product__btn .cart {
+    opacity: 1;
+    transition: .5s;
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 18px / 2);
+}
+
+.b-total{
+    background: #FFFFFF;
+    height: 136px;
+}
+.b-total .container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.b-total__text{
+    font-size: 36px;
+}
+.b-total__text span{
+    color: red;
+}
+
+.is_cart {
+    background-color: #0c902b;
+    transition: .5s;
+}
